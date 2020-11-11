@@ -68,7 +68,13 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: width > height ? height * 0.18 : height * 0.25,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: kCardColor,
+                          gradient: LinearGradient(
+                              colors: [
+                                Color(0xff3499FF),
+                                Color(0xff3A3985),
+                                Color(0xff3A3985)
+                              ],
+                              stops: [0,0.5,0.9]),
                           borderRadius: BorderRadius.circular(20.0),
                           boxShadow: [
                             BoxShadow(
@@ -148,7 +154,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         title: "LinkedIn",
                       ),
                       IconLink(
-                        url: 'https://www.youtube.com/maherjaafar',
+                        url:
+                            'https://youtube.com/channel/UCdnbsZZlHKGivUXaVo4EP1Q',
                         asset: "$_baseUrl/icons/youtube.png",
                         title: "Youtube",
                       ),
