@@ -1,5 +1,5 @@
 name: maher_jaafar_portfolio
-description: A new Flutter project.
+description: Maher Jaafar portfolio
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -30,6 +30,10 @@ dependencies:
 
   url_launcher: ^5.7.10
 
+  carousel_slider: ^2.3.1
+
+  video_player: ^1.0.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -46,8 +50,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/icons
-    - assets/animated
+    - assets/
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

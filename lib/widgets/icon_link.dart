@@ -26,7 +26,7 @@ class IconLink extends StatelessWidget {
           Container(
             alignment: Alignment.center,
             child: Container(
-              child: Image.asset(
+              child: Image.network(
                 asset,
                 width: width * 0.2,
                 height: height * 0.1,
