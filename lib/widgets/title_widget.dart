@@ -30,6 +30,8 @@ class TitleWidget extends StatelessWidget {
           ),
           Text(
             title,
+            maxLines: 1,
+            softWrap: false,
             style: kTextTitleStyle.copyWith(
               color: Colors.white,
             ),
