@@ -1,8 +1,6 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:maher_jaafar_portfolio/models/github_repo_model.dart';
-import 'package:maher_jaafar_portfolio/repositories/github_repository.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'package:maher_jaafar_portfolio/widgets/title_widget.dart';
@@ -49,11 +47,6 @@ class _MyHomePageState extends State<MyHomePage> {
     final height = screenSize.height;
     final width = screenSize.width;
 
-    // final githubData = ;
-
-    // // final myListFromJson =
-    // //     List.from(githubRepo.getData()).map((e) => print("e")).toList();
-
     return Scaffold(
       body: Container(
         height: double.infinity,
@@ -79,7 +72,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       children: [
                         Container(
                           margin: EdgeInsets.all(kDefaultPadding),
-                          padding: EdgeInsets.all(kDefaultPadding),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: kDefaultPadding / 2),
                           alignment: Alignment.centerLeft,
                           height:
                               width > height ? height * 0.18 : height * 0.25,
@@ -217,7 +211,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           url:
                               "https://stackoverflow.com/users/9478226/j-maher",
                           title: "StackOverflow",
-                        )
+                        ),
                       ],
                     ),
                   )

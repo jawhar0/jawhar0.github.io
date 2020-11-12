@@ -1,4 +1,3 @@
-import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:maher_jaafar_portfolio/constants.dart';
@@ -30,7 +29,7 @@ class MyGitHubReposWidget extends StatelessWidget {
             alignment: WrapAlignment.start,
             children: data.map<Widget>((e) {
               return Container(
-                height: height * 0.1,
+                height: height * 0.15,
                 width: width > height ? width * 0.4 : double.infinity,
                 margin: EdgeInsets.all(kDefaultPadding / 2),
                 decoration: BoxDecoration(
@@ -114,3 +113,5 @@ class MyGitHubReposWidget extends StatelessWidget {
     }
   }
 }
+
+
