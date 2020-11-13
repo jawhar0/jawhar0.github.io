@@ -1,16 +1,14 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
+import 'package:maher_jaafar_portfolio/constants.dart';
+import 'package:maher_jaafar_portfolio/screens/widgets/icon_link.dart';
+import 'package:maher_jaafar_portfolio/screens/widgets/my_appbar.dart';
+import 'package:maher_jaafar_portfolio/screens/widgets/my_github_repos_widget.dart';
+import 'package:maher_jaafar_portfolio/screens/widgets/title_widget.dart';
+import 'package:maher_jaafar_portfolio/screens/widgets/youtube_videos_widget/youtube_videos_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import 'package:maher_jaafar_portfolio/widgets/title_widget.dart';
-import 'package:maher_jaafar_portfolio/constants.dart';
-import 'package:maher_jaafar_portfolio/widgets/icon_link.dart';
-import 'package:maher_jaafar_portfolio/widgets/my_appbar.dart';
-
-import 'widgets/my_github_repos_widget.dart';
-
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 
@@ -257,6 +255,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 title: "Public github repos",
               ),
               MyGitHubReposWidget(),
+              TitleWidget(
+                title: "Youtube videos",
+              ),
+              YoutubeVideosWidget(),
             ],
           ),
         ),
