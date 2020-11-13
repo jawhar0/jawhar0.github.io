@@ -77,7 +77,7 @@ class _YoutubeVideosWidgetState extends State<YoutubeVideoWidget> {
           color: Colors.white,
           borderRadius: BorderRadius.circular(kDefaultPadding / 2),
         ),
-        height: width > height ? height * 0.5 : height * 0.3,
+        height: width > height ? height * 0.5 : height * 0.5,
         width: width > height ? width * 0.5 : width * 0.9,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
