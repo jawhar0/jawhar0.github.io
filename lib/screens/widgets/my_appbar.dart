@@ -6,7 +6,7 @@ class MyCustomAppBar extends StatelessWidget {
     Key key,
   }) : super(key: key);
 
-  final _baseUrl = "http://maherjaafar.me/assets/assets";
+  final _baseUrl = "http://www.maherjaafar.me/assets/assets";
 
   @override
   Widget build(BuildContext context) {
@@ -118,9 +118,9 @@ class MyCustomAppBar extends StatelessWidget {
                                 decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                     image: new DecorationImage(
-                                      fit: BoxFit.fill,
+                                      fit: BoxFit.cover,
                                       image: NetworkImage(
-                                          "$_baseUrl/maherjaafar.png"),
+                                          "$_baseUrl/maherpic.png"),
                                     )),
                               ),
                               Positioned(

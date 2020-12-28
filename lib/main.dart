@@ -4,7 +4,6 @@ import 'package:maher_jaafar_portfolio/screens/widgets/icon_link.dart';
 import 'package:maher_jaafar_portfolio/screens/widgets/my_appbar.dart';
 import 'package:maher_jaafar_portfolio/screens/widgets/my_github_repos_widget.dart';
 import 'package:maher_jaafar_portfolio/screens/widgets/title_widget.dart';
-import 'package:maher_jaafar_portfolio/screens/widgets/youtube_videos_widget/youtube_videos_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void main() {
@@ -36,7 +35,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final _baseUrl = "http://maherjaafar.me/assets/assets";
+  final _baseUrl = "http://www.maherjaafar.me/assets/assets";
   //var _current = 0;
 
   @override
