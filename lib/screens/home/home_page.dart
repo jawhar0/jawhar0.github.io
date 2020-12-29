@@ -37,39 +37,43 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Container(
                     margin: EdgeInsets.all(kDefaultPadding),
-                    child: Flexible(
-                        child: Container(
-                      padding: EdgeInsets.symmetric(
-                          vertical: kDefaultPadding,
-                          horizontal: kDefaultPadding / 2),
-                      alignment: Alignment.centerLeft,
-                      // height: width > height ? height * 0.18 : height * 0.25,
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(colors: [
-                          Color(0xff3499FF),
-                          Color(0xff3A3985),
-                          Color(0xff3A3985)
-                        ], stops: [
-                          0,
-                          0.5,
-                          0.9
-                        ]),
-                        borderRadius: BorderRadius.circular(20.0),
-                        boxShadow: [
-                          BoxShadow(
-                            offset: Offset(2.0, 2.0),
-                            color: Colors.white,
+                    padding: EdgeInsets.symmetric(
+                        vertical: kDefaultPadding,
+                        horizontal: kDefaultPadding / 2),
+                    alignment: Alignment.centerLeft,
+                    // height: width > height ? height * 0.18 : height * 0.25,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(colors: [
+                        Color(0xff3499FF),
+                        Color(0xff3A3985),
+                        Color(0xff3A3985)
+                      ], stops: [
+                        0,
+                        0.5,
+                        0.9
+                      ]),
+                      borderRadius: BorderRadius.circular(20.0),
+                      boxShadow: [
+                        BoxShadow(
+                          offset: Offset(2.0, 2.0),
+                          color: Colors.white,
+                        ),
+                      ],
+                    ),
+                    child: Row(
+                      children: [
+                        Flexible(
+                          child: Text(
+                            kDescription,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                            softWrap: true,
                           ),
-                        ],
-                      ),
-                      child: Text(
-                        kDescription,
-                        style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.bold),
-                        softWrap: true,
-                      ),
-                    )),
+                        ),
+                      ],
+                    ),
                   )
                 ],
               ),
