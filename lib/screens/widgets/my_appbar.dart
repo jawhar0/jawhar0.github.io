@@ -32,65 +32,6 @@ class MyCustomAppBar extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    // width > height
-                    //     ? ClipPath(
-                    //         clipper: MyClipper(),
-                    //         child: Container(
-                    //           alignment: Alignment.center,
-                    //           height: height * 0.33,
-                    //           width: width * 0.8,
-                    //           decoration: BoxDecoration(
-                    //               color: Colors.white,
-                    //               borderRadius: BorderRadius.circular(20.0),
-                    //               boxShadow: [
-                    //                 BoxShadow(
-                    //                   blurRadius: 4.0,
-                    //                   color: Colors.white30,
-                    //                   spreadRadius: 3.0,
-                    //                   offset: Offset(4, 4),
-                    //                 )
-                    //               ]),
-                    //           child: Column(
-                    //             mainAxisAlignment: MainAxisAlignment.center,
-                    //             children: <Widget>[
-                    //               Stack(
-                    //                 children: [
-                    //                   Container(
-                    //                     margin: const EdgeInsets.all(4.0),
-                    //                     height: height * 0.2,
-                    //                     width: height * 0.2,
-                    //                     decoration: BoxDecoration(
-                    //                         shape: BoxShape.circle,
-                    //                         image: new DecorationImage(
-                    //                           fit: BoxFit.fill,
-                    //                           image: NetworkImage(
-                    //                               "$_baseUrl/maherjaafar.png"),
-                    //                         )),
-                    //                   ),
-                    //                   Positioned(
-                    //                       right: 5,
-                    //                       child: Image.network(
-                    //                           "$_baseUrl/icons/verified.png")),
-                    //                 ],
-                    //               ),
-
-                    //               FittedBox(
-                    //                 fit: BoxFit.fitWidth,
-                    //                 child: Text(
-                    //                   "Maher Jaafar",
-                    //                   style: kTextTitleStyle,
-                    //                 ),
-                    //               ),
-                    //               // TextSpan(
-                    //               //   text: "Jaafar",
-                    //               //   style: kTextTitleStyle.copyWith(
-                    //               //       color: Color(0xFF031F4A)),
-                    //               // ),
-                    //             ],
-                    //           ),
-                    //         ),
-                    //       )
-                    //     :
                     Container(
                       alignment: Alignment.center,
                       height: height * 0.33,
@@ -120,7 +61,7 @@ class MyCustomAppBar extends StatelessWidget {
                                     image: new DecorationImage(
                                       fit: BoxFit.cover,
                                       image: NetworkImage(
-                                          "$_baseUrl/maherpic.png"),
+                                          "$_baseUrl/maherprofilepic.jpg"),
                                     )),
                               ),
                               Positioned(
@@ -129,7 +70,6 @@ class MyCustomAppBar extends StatelessWidget {
                                       "$_baseUrl/icons/verified.png")),
                             ],
                           ),
-
                           FittedBox(
                             fit: BoxFit.fitWidth,
                             child: Text(
@@ -137,11 +77,6 @@ class MyCustomAppBar extends StatelessWidget {
                               style: kTextTitleStyle,
                             ),
                           ),
-                          // TextSpan(
-                          //   text: "Jaafar",
-                          //   style: kTextTitleStyle.copyWith(
-                          //       color: Color(0xFF031F4A)),
-                          // ),
                         ],
                       ),
                     ),
@@ -208,22 +143,3 @@ class MyCustomAppBar extends StatelessWidget {
     );
   }
 }
-
-// class MyClipper extends CustomClipper<Path> {
-//   @override
-//   Path getClip(Size size) {
-//     var path = Path();
-
-//     path.lineTo(0, size.height);
-//     path.quadraticBezierTo(
-//         size.width / 2, size.height, size.width, size.height - 35);
-//     path.lineTo(size.width, 0);
-//     path.close();
-//     return path;
-//   }
-
-//   @override
-//   bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
-//     return false;
-//   }
-// }

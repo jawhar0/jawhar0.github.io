@@ -30,15 +30,13 @@ dependencies:
 
   url_launcher: ^5.7.10
 
-  carousel_slider: ^2.3.1
-
-  video_player: ^1.0.0
-
   equatable: ^1.2.5
 
   http: ^0.12.2
 
-  youtube_player_iframe: ^1.1.0
+  simple_animations: ^2.4.2
+
+  supercharged: ^1.12.0
 
 dev_dependencies:
   flutter_test:
@@ -55,8 +53,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - assets/
+  #assets:
+  #  - assets/
 
   #   - images/a_dot_ham.jpeg
 
