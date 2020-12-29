@@ -3,7 +3,6 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:maher_jaafar_portfolio/animated_background/fancy_background.dart';
-import 'package:maher_jaafar_portfolio/main.dart';
 import 'package:maher_jaafar_portfolio/screens/home/home_page.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -18,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-        Duration(seconds: 4),
+        Duration(seconds: 2, milliseconds: 500),
         () => Navigator.of(context).pushReplacement(MaterialPageRoute(
             builder: (BuildContext context) =>
                 MyHomePage(title: 'Maher Jaafar'))));

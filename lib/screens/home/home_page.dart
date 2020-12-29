@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:maher_jaafar_portfolio/constants.dart';
 import 'package:maher_jaafar_portfolio/screens/widgets/icon_link.dart';
 import 'package:maher_jaafar_portfolio/screens/widgets/my_appbar.dart';
-import 'package:maher_jaafar_portfolio/screens/widgets/my_github_repos_widget.dart';
+import 'package:maher_jaafar_portfolio/screens/widgets/github_repos_widget.dart';
 import 'package:maher_jaafar_portfolio/screens/widgets/title_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -16,74 +16,63 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final _baseUrl = "http://www.maherjaafar.me/assets/assets";
-  //var _current = 0;
 
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final height = screenSize.height;
-    final width = screenSize.width;
 
     return Scaffold(
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        decoration: BoxDecoration(border: Border.all()),
+
+        //decoration: BoxDecoration(border: Border.all()),
         child: SingleChildScrollView(
           child: Column(
             children: [
               MyCustomAppBar(),
-              Container(
-                  margin: const EdgeInsets.all(kDefaultPadding),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [],
-                  )),
               Column(
                 children: [
                   TitleWidget(
                     title: "About me",
                   ),
-                  SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        Container(
-                          margin: EdgeInsets.all(kDefaultPadding),
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: kDefaultPadding / 2),
-                          alignment: Alignment.centerLeft,
-                          height:
-                              width > height ? height * 0.18 : height * 0.25,
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(colors: [
-                              Color(0xff3499FF),
-                              Color(0xff3A3985),
-                              Color(0xff3A3985)
-                            ], stops: [
-                              0,
-                              0.5,
-                              0.9
-                            ]),
-                            borderRadius: BorderRadius.circular(20.0),
-                            boxShadow: [
-                              BoxShadow(
-                                offset: Offset(2.0, 2.0),
-                                color: Colors.white,
-                              ),
-                            ],
+                  Container(
+                      margin: EdgeInsets.all(kDefaultPadding),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: kDefaultPadding / 2,
+                          vertical: kDefaultPadding / 2),
+                      alignment: Alignment.centerLeft,
+                      // height: width > height ? height * 0.18 : height * 0.25,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(colors: [
+                          Color(0xff3499FF),
+                          Color(0xff3A3985),
+                          Color(0xff3A3985)
+                        ], stops: [
+                          0,
+                          0.5,
+                          0.9
+                        ]),
+                        borderRadius: BorderRadius.circular(20.0),
+                        boxShadow: [
+                          BoxShadow(
+                            offset: Offset(2.0, 2.0),
+                            color: Colors.white,
                           ),
-                          child: Text(
-                            kDescription,
-                            style: width > height
-                                ? kTextStyle.copyWith(
-                                    color: Colors.white, fontSize: 25)
-                                : kTextStyle.copyWith(color: Colors.white),
-                          ),
+                        ],
+                      ),
+                      child: Flexible(
+                          child: Container(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          kDescription,
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                          softWrap: true,
                         ),
-                      ],
-                    ),
-                  )
+                      )))
                 ],
               ),
               Column(
