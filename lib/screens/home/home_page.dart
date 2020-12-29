@@ -24,10 +24,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
       body: Container(
-        height: double.infinity,
         width: double.infinity,
-
-        //decoration: BoxDecoration(border: Border.all()),
+        height: double.infinity,
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -38,10 +36,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     title: "About me",
                   ),
                   Container(
-                      margin: EdgeInsets.all(kDefaultPadding),
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: kDefaultPadding / 2,
-                          vertical: kDefaultPadding / 2),
+                    margin: EdgeInsets.all(kDefaultPadding),
+                    child: Flexible(
+                        child: Container(
+                      padding: EdgeInsets.symmetric(
+                          vertical: kDefaultPadding,
+                          horizontal: kDefaultPadding / 2),
                       alignment: Alignment.centerLeft,
                       // height: width > height ? height * 0.18 : height * 0.25,
                       width: double.infinity,
@@ -63,16 +63,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ],
                       ),
-                      child: Flexible(
-                          child: Container(
-                        alignment: Alignment.centerLeft,
-                        child: Text(
-                          kDescription,
-                          style: TextStyle(
-                              color: Colors.white, fontWeight: FontWeight.bold),
-                          softWrap: true,
-                        ),
-                      )))
+                      child: Text(
+                        kDescription,
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                        softWrap: true,
+                      ),
+                    )),
+                  )
                 ],
               ),
               Column(
