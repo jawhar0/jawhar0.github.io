@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:maher_jaafar_portfolio/constants.dart';
 import 'package:maher_jaafar_portfolio/repositories/github_repository.dart';
@@ -70,16 +69,6 @@ class MyGitHubReposWidget extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                     color: Colors.black87),
                               ),
-                              if (e['description'] != null)
-                                Text(
-                                  "${e['description']}",
-                                  textAlign: TextAlign.start,
-                                  softWrap: true,
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.normal,
-                                      fontSize: 14.0,
-                                      color: Colors.black),
-                                ),
                             ],
                           ),
                         ),
@@ -113,5 +102,3 @@ class MyGitHubReposWidget extends StatelessWidget {
     }
   }
 }
-
-

@@ -15,7 +15,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final _baseUrl = "http://www.maherjaafar.me/assets/assets";
+  //final _baseUrl = "http://www.maherjaafar.me/assets/assets";
+
+  ScrollController _scrollController = ScrollController();
 
   @override
   Widget build(BuildContext context) {
@@ -26,170 +28,176 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              MyCustomAppBar(),
-              Column(
-                children: [
-                  TitleWidget(
-                    title: "About me",
-                  ),
-                  Container(
-                    margin: EdgeInsets.all(kDefaultPadding),
-                    padding: EdgeInsets.symmetric(
-                        vertical: kDefaultPadding,
-                        horizontal: kDefaultPadding / 2),
-                    alignment: Alignment.centerLeft,
-                    // height: width > height ? height * 0.18 : height * 0.25,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(colors: [
-                        Color(0xff3499FF),
-                        Color(0xff3A3985),
-                        Color(0xff3A3985)
-                      ], stops: [
-                        0,
-                        0.5,
-                        0.9
-                      ]),
-                      borderRadius: BorderRadius.circular(20.0),
-                      boxShadow: [
-                        BoxShadow(
-                          offset: Offset(2.0, 2.0),
-                          color: Colors.white,
-                        ),
-                      ],
+        child: Scrollbar(
+          isAlwaysShown: true,
+          thickness: 8.0,
+          controller: _scrollController,
+          child: SingleChildScrollView(
+            controller: _scrollController,
+            child: Column(
+              children: [
+                MyCustomAppBar(),
+                Column(
+                  children: [
+                    TitleWidget(
+                      title: "About me",
                     ),
-                    child: Row(
-                      children: [
-                        Flexible(
-                          child: Text(
-                            kDescription,
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold),
-                            softWrap: true,
-                          ),
-                        ),
-                      ],
-                    ),
-                  )
-                ],
-              ),
-              Column(
-                children: [
-                  TitleWidget(
-                    title: "Curriculum Vitae",
-                  ),
-                  FlatButton(
-                    onPressed: () {
-                      _launchInBrowser(
-                          "https://drive.google.com/file/d/1TcJpwJ1xIThZv0a53-zgueWz0TEyZuSX/view?usp=sharing");
-                    },
-                    child: Container(
-                      margin: const EdgeInsets.all(kDefaultPadding),
-                      height: height * 0.1,
+                    Container(
+                      margin: EdgeInsets.all(kDefaultPadding),
+                      padding: EdgeInsets.symmetric(
+                          vertical: kDefaultPadding,
+                          horizontal: kDefaultPadding / 2),
+                      alignment: Alignment.centerLeft,
+                      // height: width > height ? height * 0.18 : height * 0.25,
                       width: double.infinity,
-                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(colors: [
+                          Color(0xff3499FF),
+                          Color(0xff3A3985),
+                          Color(0xff3A3985)
+                        ], stops: [
+                          0,
+                          0.5,
+                          0.9
+                        ]),
+                        borderRadius: BorderRadius.circular(20.0),
+                        boxShadow: [
+                          BoxShadow(
+                            offset: Offset(2.0, 2.0),
+                            color: Colors.white,
+                          ),
+                        ],
+                      ),
+                      child: Row(
+                        children: [
+                          Flexible(
+                            child: Text(
+                              kDescription,
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                              softWrap: true,
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+                Column(
+                  children: [
+                    TitleWidget(
+                      title: "Curriculum Vitae",
+                    ),
+                    FlatButton(
+                      onPressed: () {
+                        _launchInBrowser(
+                            "https://drive.google.com/file/d/1TcJpwJ1xIThZv0a53-zgueWz0TEyZuSX/view?usp=sharing");
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.all(kDefaultPadding),
+                        height: height * 0.1,
+                        width: double.infinity,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Open my CV ",
+                              style: kTextStyle,
+                            ),
+                            Icon(Icons.open_in_browser)
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Column(
+                  children: [
+                    TitleWidget(
+                      title: "My content",
+                    ),
+                    Container(
+                      margin: EdgeInsets.all(kDefaultPadding),
+                      height: height * 0.2,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
-                            "Open my CV ",
-                            style: kTextStyle,
+                          IconLink(
+                            url: 'https://www.instagram.com/maher.codes',
+                            asset: "assets/icons/instagram.png",
+                            title: "Instagram",
                           ),
-                          Icon(Icons.open_in_browser)
+                          IconLink(
+                            url: 'https://www.linkedin.com/in/engineermaher',
+                            asset: "assets/icons/linkedin.png",
+                            title: "LinkedIn",
+                          ),
+                          IconLink(
+                            url:
+                                'https://youtube.com/channel/UCdnbsZZlHKGivUXaVo4EP1Q',
+                            asset: "assets/icons/youtube.png",
+                            title: "Youtube",
+                          ),
+                          IconLink(
+                            url: 'https://twitter.com/MaherJaafar',
+                            asset: "assets/icons/twitter.webp",
+                            title: "Twitter",
+                          ),
                         ],
                       ),
+                    )
+                  ],
+                ),
+                Column(
+                  children: [
+                    TitleWidget(
+                      title: "Professional",
                     ),
-                  ),
-                ],
-              ),
-              Column(
-                children: [
-                  TitleWidget(
-                    title: "My content",
-                  ),
-                  Container(
-                    margin: EdgeInsets.all(kDefaultPadding),
-                    height: height * 0.2,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(20.0),
-                    ),
-                    child: Row(
-                      children: [
-                        IconLink(
-                          url: 'https://www.instagram.com/maher.codes',
-                          asset: "$_baseUrl/icons/instagram.png",
-                          title: "Instagram",
-                        ),
-                        IconLink(
-                          url: 'https://www.linkedin.com/in/engineermaher',
-                          asset: "$_baseUrl/icons/linkedin.png",
-                          title: "LinkedIn",
-                        ),
-                        IconLink(
-                          url:
-                              'https://youtube.com/channel/UCdnbsZZlHKGivUXaVo4EP1Q',
-                          asset: "$_baseUrl/icons/youtube.png",
-                          title: "Youtube",
-                        ),
-                        IconLink(
-                          url: 'https://twitter.com/MaherJaafar',
-                          asset: "$_baseUrl/icons/twitter.webp",
-                          title: "Twitter",
-                        ),
-                      ],
-                    ),
-                  )
-                ],
-              ),
-              Column(
-                children: [
-                  TitleWidget(
-                    title: "Professional",
-                  ),
-                  Container(
-                    margin: EdgeInsets.all(kDefaultPadding),
-                    height: height * 0.2,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(20.0),
-                    ),
-                    child: Row(
-                      children: [
-                        IconLink(
-                          url: 'https://www.github.com/maherjaafar',
-                          asset: "$_baseUrl/icons/github.png",
-                          title: "GitHub",
-                        ),
-                        IconLink(
-                          asset: "$_baseUrl/icons/freelancer-logo.png",
-                          url: "https://www.freelancer.com/u/maherjaafar",
-                          title: "Freelancer",
-                        ),
-                        IconLink(
-                          asset: "$_baseUrl/icons/stack-overflow.png",
-                          url:
-                              "https://stackoverflow.com/users/9478226/j-maher",
-                          title: "StackOverflow",
-                        ),
-                      ],
-                    ),
-                  )
-                ],
-              ),
-              TitleWidget(
-                title: "Public github repos",
-              ),
-              MyGitHubReposWidget(),
-            ],
+                    Container(
+                      margin: EdgeInsets.all(kDefaultPadding),
+                      height: height * 0.2,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
+                      child: Row(
+                        children: [
+                          IconLink(
+                            url: 'https://www.github.com/maherjaafar',
+                            asset: "assets/icons/github.png",
+                            title: "GitHub",
+                          ),
+                          IconLink(
+                            asset: "assets/icons/freelancer-logo.png",
+                            url: "https://www.freelancer.com/u/maherjaafar",
+                            title: "Freelancer",
+                          ),
+                          IconLink(
+                            asset: "assets/icons/stack-overflow.png",
+                            url:
+                                "https://stackoverflow.com/users/9478226/j-maher",
+                            title: "StackOverflow",
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+                TitleWidget(
+                  title: "Public github repos",
+                ),
+                MyGitHubReposWidget(),
+              ],
+            ),
           ),
         ),
       ),
