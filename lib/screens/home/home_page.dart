@@ -15,7 +15,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  //final _baseUrl = "http://www.maherjaafar.me/assets/assets";
+  final _baseUrl = "https://www.maherjaafar.me/assets/assets";
 
   ScrollController _scrollController = ScrollController();
 
@@ -133,23 +133,23 @@ class _MyHomePageState extends State<MyHomePage> {
                         children: [
                           IconLink(
                             url: 'https://www.instagram.com/maher.codes',
-                            asset: "assets/icons/instagram.png",
+                            asset: "$_baseUrl/icons/instagram.png",
                             title: "Instagram",
                           ),
                           IconLink(
                             url: 'https://www.linkedin.com/in/engineermaher',
-                            asset: "assets/icons/linkedin.png",
+                            asset: "$_baseUrl/icons/linkedin.png",
                             title: "LinkedIn",
                           ),
                           IconLink(
                             url:
                                 'https://youtube.com/channel/UCdnbsZZlHKGivUXaVo4EP1Q',
-                            asset: "assets/icons/youtube.png",
+                            asset: "$_baseUrl/icons/youtube.png",
                             title: "Youtube",
                           ),
                           IconLink(
                             url: 'https://twitter.com/MaherJaafar',
-                            asset: "assets/icons/twitter.webp",
+                            asset: "$_baseUrl/icons/twitter.webp",
                             title: "Twitter",
                           ),
                         ],
@@ -173,16 +173,16 @@ class _MyHomePageState extends State<MyHomePage> {
                         children: [
                           IconLink(
                             url: 'https://www.github.com/maherjaafar',
-                            asset: "assets/icons/github.png",
+                            asset: "$_baseUrl/icons/github.png",
                             title: "GitHub",
                           ),
                           IconLink(
-                            asset: "assets/icons/freelancer-logo.png",
+                            asset: "$_baseUrl/icons/freelancer-logo.png",
                             url: "https://www.freelancer.com/u/maherjaafar",
                             title: "Freelancer",
                           ),
                           IconLink(
-                            asset: "assets/icons/stack-overflow.png",
+                            asset: "$_baseUrl/icons/stack-overflow.png",
                             url:
                                 "https://stackoverflow.com/users/9478226/j-maher",
                             title: "StackOverflow",

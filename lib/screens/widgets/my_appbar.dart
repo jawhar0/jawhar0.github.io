@@ -6,7 +6,7 @@ class MyCustomAppBar extends StatelessWidget {
     Key key,
   }) : super(key: key);
 
-  //final _baseUrl = "http://www.maherjaafar.me/assets/assets";
+  final _baseUrl = "https://www.maherjaafar.me/assets/assets";
 
   @override
   Widget build(BuildContext context) {
@@ -61,13 +61,13 @@ class MyCustomAppBar extends StatelessWidget {
                                     image: new DecorationImage(
                                       fit: BoxFit.cover,
                                       image: NetworkImage(
-                                          "assets/maherprofilepic.jpg"),
+                                          "$_baseUrl/maherprofilepic.jpg"),
                                     )),
                               ),
                               Positioned(
                                   right: 5,
                                   child: Image.network(
-                                      "assets/icons/verified.png")),
+                                      "$_baseUrl/icons/verified.png")),
                             ],
                           ),
                           FittedBox(
@@ -119,7 +119,7 @@ class MyCustomAppBar extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.all(kDefaultPadding),
                   child: Image.network(
-                    "assets/animated/tenor.gif",
+                    "$_baseUrl/animated/tenor.gif",
                     height: 150,
                     width: 150,
                   ),

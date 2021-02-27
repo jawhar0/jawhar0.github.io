@@ -16,7 +16,7 @@ class MyGitHubReposWidget extends StatelessWidget {
 
     final githubRepo = GithubDataRepository();
 
-    final _baseUrl = "http://www.maherjaafar.me/assets/assets";
+    final _baseUrl = "https://www.maherjaafar.me/assets/assets";
 
     return FutureBuilder(
       future: githubRepo.getData(),
