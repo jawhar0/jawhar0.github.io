@@ -12,7 +12,8 @@ var kTextStyle = TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Col
 
 //Description
 
-String kDescription = "I'm Jawhar, 27 years old. I'm a mechanical engineer, I am a SolidWorks expert with 7 years of experience ";
+String kDescription =
+    "I'm Jawhar, I'm 27 years old, a mechanical engineer. I have 7 years of experience working with SolidWorks and GibbsCam. I am looking for an opportunity to improve my skills";
 //url
 
 const baseUrl = "https://jawhar0.github.io/assets/assets";
