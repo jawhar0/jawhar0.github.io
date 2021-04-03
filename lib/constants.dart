@@ -15,7 +15,7 @@ var kTextStyle =
 //Description
 
 String kDescription =
-    "I'm 22 years old, I'm playing with Flutter and Dart from 2 years. I liked Flutter from the first try. I'm creating content on Instagram and Youtube. I like to run and explore new places.";
+    "I'm Jawhar, 27 years old. I'm a mechanical engineer, I am a SolidWorks expert with 7 years of experience ";
 //url
 
-const baseUrl = "https://www.maherjaafar.me/assets/assets";
+const baseUrl = "https://jawhar0.github.io/assets/assets";
