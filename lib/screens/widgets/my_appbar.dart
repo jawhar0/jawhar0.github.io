@@ -15,9 +15,7 @@ class MyCustomAppBar extends StatelessWidget {
     final width = screenSize.width;
 
     return FlatButton(
-      onPressed: () {
-        _showMyDialog(context);
-      },
+      onPressed: () {},
       child: Container(
         height: height * 0.35,
         margin: EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
@@ -80,59 +78,6 @@ class MyCustomAppBar extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-
-  Future<void> _showMyDialog(context) async {
-    return showDialog<void>(
-      context: context,
-      barrierDismissible: true, // user must tap button!
-      builder: (BuildContext context) {
-        return AlertDialog(
-          elevation: 3.0,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20.0),
-          ),
-          title: Text('About me'),
-          content: SingleChildScrollView(
-            child: ListBody(
-              children: <Widget>[
-                Text(
-                  "I'm 22 years old, I'm playing with Flutter and Dart from 2 years.",
-                  style: kTextStyle,
-                ),
-                Text(
-                  "I liked Flutter from the first try. I'm creating content on Instagram and Youtube.",
-                  style: kTextStyle,
-                ),
-                Text(
-                  "I like to run and explore new places.",
-                  style: kTextStyle,
-                ),
-                Container(
-                  margin: EdgeInsets.all(kDefaultPadding),
-                  child: Image.network(
-                    "$_baseUrl/animated/tenor.gif",
-                    height: 150,
-                    width: 150,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          actions: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextButton(
-                child: Text('Nice to meet you !'),
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-              ),
-            ),
-          ],
-        );
-      },
     );
   }
 }

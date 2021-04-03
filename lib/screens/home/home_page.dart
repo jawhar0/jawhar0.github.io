@@ -78,6 +78,31 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     FlatButton(
                       onPressed: () {
+                        _launchInBrowser("https://drive.google.com/file/d/1slEaJWQSlDuulf-S6Hu-F064uTvhjd73/view?usp=sharing");
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.all(kDefaultPadding),
+                        height: height * 0.1,
+                        width: double.infinity,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Open my CV ",
+                              style: kTextStyle,
+                            ),
+                            Icon(Icons.open_in_browser)
+                          ],
+                        ),
+                      ),
+                    ),
+                    FlatButton(
+                      onPressed: () {
                         _launchInBrowser("https://drive.google.com/drive/folders/1-8ol1BM4w9laI-SOHDbwfjeIIIHM80Jj");
                       },
                       child: Container(
@@ -93,7 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "Open my portflio ",
+                              "Open my drive ",
                               style: kTextStyle,
                             ),
                             Icon(Icons.open_in_browser)
