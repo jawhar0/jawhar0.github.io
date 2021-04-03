@@ -51618,7 +51618,7 @@ X.kF.prototype={
 aF:function(){return new X.FB(F.a7g(),C.l)}}
 X.FB.prototype={
 M:function(a,b){var s=null,r=4282005893,q=b.a1(t.w).f.a.b,p=this.e,o=H.c([new P.z(4281637375),new P.z(r),new P.z(r)],t.r8),n=H.c([0,0.5,0.9],t.bq),m=K.jV(20),l=H.c([new O.eB(0,C.j,new P.w(2,2),0)],t.ec),k=t.fQ
-n=T.pw(H.c([new M.nZ("About me",s),M.cQ(C.kZ,T.BD(H.c([new T.q2(1,C.oX,L.nO("I'm Jawhar, 27 years old. I'm a mechanical engineer, I am a SolidWorks expert with 7 years of experience ",s,!0,A.i6(s,s,C.j,s,s,s,s,s,s,s,s,s,s,C.bk,s,s,!0,s,s,s,s,s,s),s),s)],k),C.d9),s,s,new S.da(s,s,s,m,l,new T.j1(C.kZ,C.o0,C.eT,o,n,s),C.Z),s,new V.b6(20,20,20,20),new V.b6(10,20,10,20),1/0)],k),C.d9)
+n=T.pw(H.c([new M.nZ("About me",s),M.cQ(C.kZ,T.BD(H.c([new T.q2(1,C.oX,L.nO("I'm Jawhar, I'm 27 years old, a mechanical engineer. I have 7 years of experience working with SolidWorks and GibbsCam. I am looking for an opportunity to improve my skills",s,!0,A.i6(s,s,C.j,s,s,s,s,s,s,s,s,s,s,C.bk,s,s,!0,s,s,s,s,s,s),s),s)],k),C.d9),s,s,new S.da(s,s,s,m,l,new T.j1(C.kZ,C.o0,C.eT,o,n,s),C.Z),s,new V.b6(20,20,20,20),new V.b6(10,20,10,20),1/0)],k),C.d9)
 o=q*0.1
 l=K.jV(20)
 l=N.MO(M.cQ(C.a0,T.BD(H.c([L.nO("Open my CV ",s,s,$.a45(),s),L.a63(C.p4)],k),C.fL),s,s,new S.da(C.j,s,s,l,s,s,C.Z),o,C.oT,s,1/0),new X.Yp(this))
