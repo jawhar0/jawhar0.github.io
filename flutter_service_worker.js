@@ -3,14 +3,10 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "cdf66007ce7b1258e71d91c7f07cd571",
+  "assets/AssetManifest.json": "f6d418ec16ff61f1584e35355033f2bf",
+"assets/assets/createAssets.txt": "81051bcc2cf1bedf378224b0a93e2877",
+"assets/assets/jawharprofilepic.jpg": "bb12f3abaed8b8fcb4e91662930fa19b",
 "assets/assets/license-1637370.pdf": "feae0806bd2100f2e1f3ea7f4612478a",
-"assets/assets/maherjaafar.jpg": "be2ad5ed89c46b6c903154a1ec561f37",
-"assets/assets/maherjaafar.png": "4c22f4ab34ec06f70e67f43ab63a013d",
-"assets/assets/maherpic.jpg": "ca0969f9b432d6ae73cd2bc98738e6aa",
-"assets/assets/maherpic.png": "2a577dfc5950c9c510feb6394a630aa7",
-"assets/assets/maherpicmin.png": "4225ff958c93865f96ca726b48f79633",
-"assets/assets/maherprofilepic.jpg": "21b715bd33baf34f5d38314a33bdd7a2",
 "assets/assets/verified.svg": "c884f427a7f5b780545f8a264cdc8688",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
@@ -19,10 +15,10 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "9f2abecf8db1d80fa03a90be49bedba4",
-"/": "9f2abecf8db1d80fa03a90be49bedba4",
-"main.dart.js": "9087b9b6cfc0c9dacfda0a7afabee673",
-"manifest.json": "fd0d7785fe0d33217e3c8fb59d703df0",
+"index.html": "109e84817f6700619b7015475c59ea63",
+"/": "109e84817f6700619b7015475c59ea63",
+"main.dart.js": "be20c15d157d73d5a222e76e56fac685",
+"manifest.json": "990cf1c73413c319a04539c939f3dabf",
 "version.json": "c359ca6b15c374299a3bdb8bef8a287a"
 };
 

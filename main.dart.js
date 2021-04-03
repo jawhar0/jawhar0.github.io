@@ -52930,7 +52930,7 @@ X.xR.prototype={
 K:function(a,b){var s=null
 return T.Lf(L.h3("Welcome",s,s,A.ii(s,s,C.j,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s),5),s,s)}}
 K.At.prototype={
-K:function(a,b){return new S.r5(new G.tZ(null),"jawhar_bouhlel",X.a90(null,C.xo,C.lw),!1,null)}}
+K:function(a,b){return new S.r5(new G.tZ(null),"Jawhar Bouhlel",X.a90(null,C.xo,C.lw),!1,null)}}
 X.kV.prototype={
 aH:function(){return new X.Gd(F.a8M(),C.l)}}
 X.Gd.prototype={
@@ -53007,7 +53007,7 @@ s.lK(s.c)},
 $S:2}
 O.Au.prototype={
 K:function(a,b){var s=null,r=b.Y(t.w).f.a,q=r.b,p=q*0.35,o=M.cM(s,s,C.b6,s,s,p,s,s,s),n=K.k9(20),m=H.b([new O.eL(3,C.u8,new P.u(4,4),4)],t.ec),l=q*0.2,k=t.fQ
-return N.a3h(M.cM(s,T.jz(C.bW,H.b([T.jz(C.bW,H.b([o,T.Tx(H.b([M.cM(C.P,T.mm(H.b([T.jz(C.bW,H.b([M.cM(s,s,s,s,new S.dB(s,new X.yK(new D.kY("https://www.maherjaafar.me/assets/assets/maherprofilepic.jpg",1),C.ov),s,s,s,s,C.bX),l,C.p7,s,l),T.Bs(s,U.a3n("https://www.maherjaafar.me/assets/assets/icons/verified.png",s,s),s,s,s,5,s,s)],k),C.bV),T.a7n(L.h3("jawhar_bouhlel",s,s,$.a5C(),s),C.lq)],k),C.bs,C.dh,C.bP),s,s,new S.dB(C.j,s,s,n,m,s,C.a3),q*0.33,s,s,r.a*0.8)],k),C.dh)],k),C.bV)],k),C.bV),s,s,s,p,new V.aE(0,10,0,10),s,s),new O.QE(this,b))},
+return N.a3h(M.cM(s,T.jz(C.bW,H.b([T.jz(C.bW,H.b([o,T.Tx(H.b([M.cM(C.P,T.mm(H.b([T.jz(C.bW,H.b([M.cM(s,s,s,s,new S.dB(s,new X.yK(new D.kY("https://jawhar0.github.io/assets/assets/jawharprofilepic.jpg",1),C.ov),s,s,s,s,C.bX),l,C.p7,s,l),T.Bs(s,U.a3n("https://jawhar0.github.io/assets/assets/icons/verified.png",s,s),s,s,s,5,s,s)],k),C.bV),T.a7n(L.h3("Jawhar Bouhlel",s,s,$.a5C(),s),C.lq)],k),C.bs,C.dh,C.bP),s,s,new S.dB(C.j,s,s,n,m,s,C.a3),q*0.33,s,s,r.a*0.8)],k),C.dh)],k),C.bV)],k),C.bV),s,s,s,p,new V.aE(0,10,0,10),s,s),new O.QE(this,b))},
 uu:function(a){var s=0,r=P.a6(t.H),q,p=this,o,n
 var $async$uu=P.a2(function(b,c){if(b===1)return P.a3(c,r)
 while(true)switch(s){case 0:n=K.n7(a,!0).c
@@ -53023,7 +53023,7 @@ $0:function(){this.a.uu(this.b)},
 $S:2}
 O.QD.prototype={
 $1:function(a){var s=null,r=K.k9(20),q=L.h3("About me",s,s,s,s),p=$.a5B(),o=t.fQ
-return new E.m4(q,E.a8R(new T.Ab(H.b([L.h3("I'm 22 years old, I'm playing with Flutter and Dart from 2 years.",s,s,p,s),L.h3("I liked Flutter from the first try. I'm creating content on Instagram and Youtube.",s,s,p,s),L.h3("I like to run and explore new places.",s,s,p,s),M.cM(s,U.a3n("https://www.maherjaafar.me/assets/assets/animated/tenor.gif",150,150),s,s,s,s,new V.aE(20,20,20,20),s,s)],o),s),s),H.b([new T.dd(C.p9,new U.D7(new O.QC(a),s,s,C.D,s,!1,L.h3("Nice to meet you !",s,s,s,s),s),s)],o),3,new X.d_(r,C.p),s)},
+return new E.m4(q,E.a8R(new T.Ab(H.b([L.h3("I'm 22 years old, I'm playing with Flutter and Dart from 2 years.",s,s,p,s),L.h3("I liked Flutter from the first try. I'm creating content on Instagram and Youtube.",s,s,p,s),L.h3("I like to run and explore new places.",s,s,p,s),M.cM(s,U.a3n("https://jawhar0.github.io/assets/assets/animated/tenor.gif",150,150),s,s,s,s,new V.aE(20,20,20,20),s,s)],o),s),s),H.b([new T.dd(C.p9,new U.D7(new O.QC(a),s,s,C.D,s,!1,L.h3("Nice to meet you !",s,s,s,s),s),s)],o),3,new X.d_(r,C.p),s)},
 $S:347}
 O.QC.prototype={
 $0:function(){K.n7(this.a,!1).cS(0)},
