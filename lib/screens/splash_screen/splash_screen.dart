@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:maher_jaafar_portfolio/animated_background/fancy_background.dart';
-import 'package:maher_jaafar_portfolio/screens/home/home_page.dart';
+import 'package:jawhar_bouhlel_portfolio/animated_background/fancy_background.dart';
+import 'package:jawhar_bouhlel_portfolio/screens/home/home_page.dart';
 
 class SplashScreen extends StatefulWidget {
   SplashScreen({Key key}) : super(key: key);
@@ -18,9 +18,8 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(
         Duration(seconds: 2, milliseconds: 500),
-        () => Navigator.of(context).pushReplacement(MaterialPageRoute(
-            builder: (BuildContext context) =>
-                MyHomePage(title: 'Maher Jaafar'))));
+        () => Navigator.of(context)
+            .pushReplacement(MaterialPageRoute(builder: (BuildContext context) => MyHomePage(title: 'Jawhar Bouhlel'))));
   }
 
   @override

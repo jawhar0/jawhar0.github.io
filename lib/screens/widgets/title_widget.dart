@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:maher_jaafar_portfolio/constants.dart';
+import 'package:jawhar_bouhlel_portfolio/constants.dart';
 
 class TitleWidget extends StatelessWidget {
   const TitleWidget({

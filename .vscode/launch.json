@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "maher_jaafar_portfolio",
+            "name": "jawhar_bouhlel_portfolio",
             "request": "launch",
             "type": "dart"
         }

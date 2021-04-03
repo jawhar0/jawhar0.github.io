@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:maher_jaafar_portfolio/constants.dart';
-import 'package:maher_jaafar_portfolio/screens/widgets/icon_link.dart';
-import 'package:maher_jaafar_portfolio/screens/widgets/my_appbar.dart';
-import 'package:maher_jaafar_portfolio/screens/widgets/github_repos_widget.dart';
-import 'package:maher_jaafar_portfolio/screens/widgets/title_widget.dart';
+import 'package:jawhar_bouhlel_portfolio/constants.dart';
+import 'package:jawhar_bouhlel_portfolio/screens/widgets/icon_link.dart';
+import 'package:jawhar_bouhlel_portfolio/screens/widgets/my_appbar.dart';
+import 'package:jawhar_bouhlel_portfolio/screens/widgets/title_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -44,22 +43,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     Container(
                       margin: EdgeInsets.all(kDefaultPadding),
-                      padding: EdgeInsets.symmetric(
-                          vertical: kDefaultPadding,
-                          horizontal: kDefaultPadding / 2),
+                      padding: EdgeInsets.symmetric(vertical: kDefaultPadding, horizontal: kDefaultPadding / 2),
                       alignment: Alignment.centerLeft,
                       // height: width > height ? height * 0.18 : height * 0.25,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        gradient: LinearGradient(colors: [
-                          Color(0xff3499FF),
-                          Color(0xff3A3985),
-                          Color(0xff3A3985)
-                        ], stops: [
-                          0,
-                          0.5,
-                          0.9
-                        ]),
+                        gradient: LinearGradient(colors: [Color(0xff3499FF), Color(0xff3A3985), Color(0xff3A3985)], stops: [0, 0.5, 0.9]),
                         borderRadius: BorderRadius.circular(20.0),
                         boxShadow: [
                           BoxShadow(
@@ -73,9 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           Flexible(
                             child: Text(
                               kDescription,
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold),
+                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
                               softWrap: true,
                             ),
                           ),
@@ -91,8 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     FlatButton(
                       onPressed: () {
-                        _launchInBrowser(
-                            "https://drive.google.com/drive/folders/1-8ol1BM4w9laI-SOHDbwfjeIIIHM80Jj");
+                        _launchInBrowser("https://drive.google.com/drive/folders/1-8ol1BM4w9laI-SOHDbwfjeIIIHM80Jj");
                       },
                       child: Container(
                         margin: const EdgeInsets.all(kDefaultPadding),

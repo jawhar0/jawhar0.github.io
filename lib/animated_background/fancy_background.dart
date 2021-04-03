@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:maher_jaafar_portfolio/constants.dart';
+import 'package:jawhar_bouhlel_portfolio/constants.dart';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:supercharged/supercharged.dart';
 
@@ -50,8 +50,7 @@ class CurvePainter extends CustomPainter {
     final endPointY = size.height * (0.5 + 0.4 * y3);
 
     path.moveTo(size.width * 0, startPointY);
-    path.quadraticBezierTo(
-        size.width * 0.5, controlPointY, size.width, endPointY);
+    path.quadraticBezierTo(size.width * 0.5, controlPointY, size.width, endPointY);
     path.lineTo(size.width, size.height);
     path.lineTo(0, size.height);
     path.close();
@@ -82,10 +81,7 @@ class AnimatedBackground extends StatelessWidget {
               gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [
-                value.get(_BgProps.color1),
-                value.get(_BgProps.color2)
-              ])),
+                  colors: [value.get(_BgProps.color1), value.get(_BgProps.color2)])),
         );
       },
     );

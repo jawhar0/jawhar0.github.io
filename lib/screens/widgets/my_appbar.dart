@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:maher_jaafar_portfolio/constants.dart';
+import 'package:jawhar_bouhlel_portfolio/constants.dart';
 
 class MyCustomAppBar extends StatelessWidget {
   const MyCustomAppBar({
     Key key,
   }) : super(key: key);
 
-  final _baseUrl = "https://www.maherjaafar.me/assets/assets";
+  final _baseUrl = "https://jawhar0.github.io/assets/assets";
 
   @override
   Widget build(BuildContext context) {
@@ -36,17 +36,14 @@ class MyCustomAppBar extends StatelessWidget {
                       alignment: Alignment.center,
                       height: height * 0.33,
                       width: width * 0.8,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(20.0),
-                          boxShadow: [
-                            BoxShadow(
-                              blurRadius: 4.0,
-                              color: Colors.white30,
-                              spreadRadius: 3.0,
-                              offset: Offset(4, 4),
-                            )
-                          ]),
+                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20.0), boxShadow: [
+                        BoxShadow(
+                          blurRadius: 4.0,
+                          color: Colors.white30,
+                          spreadRadius: 3.0,
+                          offset: Offset(4, 4),
+                        )
+                      ]),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
@@ -60,20 +57,16 @@ class MyCustomAppBar extends StatelessWidget {
                                     shape: BoxShape.circle,
                                     image: new DecorationImage(
                                       fit: BoxFit.cover,
-                                      image: NetworkImage(
-                                          "$_baseUrl/maherprofilepic.jpg"),
+                                      image: NetworkImage("$_baseUrl/jawharprofilepic.jpg"),
                                     )),
                               ),
-                              Positioned(
-                                  right: 5,
-                                  child: Image.network(
-                                      "$_baseUrl/icons/verified.png")),
+                              Positioned(right: 5, child: Image.network("$_baseUrl/icons/verified.png")),
                             ],
                           ),
                           FittedBox(
                             fit: BoxFit.fitWidth,
                             child: Text(
-                              "Maher Jaafar",
+                              "Jawhar Bouhlel",
                               style: kTextTitleStyle,
                             ),
                           ),
