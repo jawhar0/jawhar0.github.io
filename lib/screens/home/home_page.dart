@@ -15,7 +15,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final _baseUrl = "https://www.maherjaafar.me/assets/assets";
+  final _baseUrl = "https://jawhar0.github.io/assets/assets";
 
   ScrollController _scrollController = ScrollController();
 
@@ -87,12 +87,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 Column(
                   children: [
                     TitleWidget(
-                      title: "Curriculum Vitae",
+                      title: "My portfolio",
                     ),
                     FlatButton(
                       onPressed: () {
                         _launchInBrowser(
-                            "https://drive.google.com/file/d/1TcJpwJ1xIThZv0a53-zgueWz0TEyZuSX/view?usp=sharing");
+                            "https://drive.google.com/drive/folders/1-8ol1BM4w9laI-SOHDbwfjeIIIHM80Jj");
                       },
                       child: Container(
                         margin: const EdgeInsets.all(kDefaultPadding),
@@ -107,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "Open my CV ",
+                              "Open my portflio ",
                               style: kTextStyle,
                             ),
                             Icon(Icons.open_in_browser)
@@ -132,23 +132,17 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Row(
                         children: [
                           IconLink(
-                            url: 'https://www.instagram.com/maher.codes',
+                            url: 'https://www.instagram.com/jawhar_bouhlel/',
                             asset: "$_baseUrl/icons/instagram.png",
                             title: "Instagram",
                           ),
                           IconLink(
-                            url: 'https://www.linkedin.com/in/engineermaher',
+                            url: 'https://www.linkedin.com/in/jawhar-bouhlel/',
                             asset: "$_baseUrl/icons/linkedin.png",
                             title: "LinkedIn",
                           ),
                           IconLink(
-                            url:
-                                'https://youtube.com/channel/UCdnbsZZlHKGivUXaVo4EP1Q',
-                            asset: "$_baseUrl/icons/youtube.png",
-                            title: "Youtube",
-                          ),
-                          IconLink(
-                            url: 'https://twitter.com/MaherJaafar',
+                            url: 'https://twitter.com/jawhar_bouhlel',
                             asset: "$_baseUrl/icons/twitter.webp",
                             title: "Twitter",
                           ),
@@ -157,45 +151,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     )
                   ],
                 ),
-                Column(
-                  children: [
-                    TitleWidget(
-                      title: "Professional",
-                    ),
-                    Container(
-                      margin: EdgeInsets.all(kDefaultPadding),
-                      height: height * 0.2,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      child: Row(
-                        children: [
-                          IconLink(
-                            url: 'https://www.github.com/maherjaafar',
-                            asset: "$_baseUrl/icons/github.png",
-                            title: "GitHub",
-                          ),
-                          IconLink(
-                            asset: "$_baseUrl/icons/freelancer-logo.png",
-                            url: "https://www.freelancer.com/u/maherjaafar",
-                            title: "Freelancer",
-                          ),
-                          IconLink(
-                            asset: "$_baseUrl/icons/stack-overflow.png",
-                            url:
-                                "https://stackoverflow.com/users/9478226/j-maher",
-                            title: "StackOverflow",
-                          ),
-                        ],
-                      ),
-                    )
-                  ],
-                ),
-                TitleWidget(
-                  title: "Public github repos",
-                ),
-                MyGitHubReposWidget(),
               ],
             ),
           ),
